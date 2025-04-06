@@ -1,4 +1,22 @@
-var todos = [];
+var todos = [
+    {
+        id: 1,
+        title: "Buy groceries",
+        isCompleted: false,
+    }, 
+    {
+        id: 2,
+        title: "Buy groceries",
+        isCompleted: false,
+    },
+    {
+        id: 3,
+        title: "Buy groceries",
+        isCompleted: false,
+    },
+];
+
+// Todo: Please render the default todos here :) 
 
 function renderTodos() {
     var todosContainer = document.getElementById("todos");
@@ -27,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
         var title = document.getElementById("title");
         // generate random id
-        var id = Math.random().toString(36).substring(2, 15);
+        var date = new Date();
+        var id = date.getTime();
 
         todos.push({
             id: id,
