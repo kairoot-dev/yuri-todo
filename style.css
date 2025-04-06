@@ -1,0 +1,52 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.class {
+
+}
+
+#googleLogo {
+    width: 200px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    color: red;
+    font-size: 20px;
+    display: none;
+  }
+}
+
+.text-lg {
+    
+}
+
+.text-xs {
+
+}
+
+.text-sm {
+    
+}
