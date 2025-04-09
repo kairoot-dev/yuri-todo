@@ -21,9 +21,15 @@ var todos = [
     },
 ];
 
-
-
 var selectedTodo = null;
+
+
+function toggled(){
+    if (selectedTodo) {
+        selectedTodo.isCompleted = !selectedTodo.isCompleted;
+        renderTodos();
+    }
+};
 
 function renderTodos() {
     var todosContainer = document.getElementById("todos");
