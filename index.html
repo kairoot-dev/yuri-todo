@@ -14,10 +14,11 @@
         <div class="card m-5">
             <form class="card-body" id="todoForm" method="POST" action="#">
                 <div class="mb-3">
-                    <label for="title" class="form-label">Todo</label>
+                    <label for="title" class="form-label" >Todo</label>
                     <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
                     <div id="titleHelp" class="form-text">Enter your todo title.</div>
                 </div>
+                <input onchange="toggled()" id="isComplete" type="checkbox" style="transform: scale(2); margin: 0 5px 0 5px;">
                 <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
                 <button type="reset" class="btn btn-secondary">Reset</button>
             </form>
@@ -32,6 +33,7 @@
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Todo</th>
+                        <th scope="col">Is compled</th>
                         <th scope="col">Actions</th>
                       </tr>
                     </thead>
