@@ -21,6 +21,8 @@ var todos = [
     },
 ];
 
+
+
 var selectedTodo = null;
 
 function renderTodos() {
@@ -32,10 +34,12 @@ function renderTodos() {
         todoItem.innerHTML = `<tr>
             <td>${ todo.id }</td>
             <td>${ todo.title }</td>
-            <td>
+            <td>${ todo.isCompleted }<td/>
+            <td">
                 <button class="btn btn-primary" onClick="editTodo(${todo.id})">Edit</button>
                 <button class="btn btn-danger" onClick="deleteTodo(${todo.id})">Delete</button>
             </td>
+            
         </tr>`;
 
         todosContainer.append(todoItem);
